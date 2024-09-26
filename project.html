@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> profile-card </title>
+<link rel="stylesheet" href="styles/profile.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+ rel="stylesheet">
+<style>
+    .body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: poppins;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f4f4f4;
+    }
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+max-width: 250px;
+width: 100%;
+background-color: #ecd0d0;
+border-radius: 24px;
+padding: 25px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+position: relative;
+}
+.profile-card::before {
+content: '';
+top: 0;
+left: 0;
+border-radius: 24px 24px 0 0;
+position: absolute;
+height: 36%;
+width: 100%;
+background-color: rgb(106, 145, 158) ;
+}
+.image {
+ position: relative;
+height: 150px;
+width: 150px;
+border-radius:50% ;
+padding: 3px;
+border: solid;
+border-color: rgb(106, 145, 158);
+margin-bottom: 10px;
+}
+.image .profile-img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+
+
+}
+.profile-card .text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text .name {
+
+    font-size: 24px;
+    font-weight: 500;
+}
+.text .job {
+  font-size: 15px;
+ font-weight: 400;
+ margin-bottom: 13px;
+}
+.profile-card .media-buttons {
+display: flex;
+align-items: center;
+}
+.media-buttons .link {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+height: 25px;
+width: 25px;
+border-radius: 50%;
+margin: 0 8px ;
+text-decoration: none;
+color:white;
+font-size: 8px;
+}
+.profile-card .buttons {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 28px;
+
+}
+.buttons .button {
+margin: 0 10px;
+border: none;
+border-radius: 24px;
+color: #fff;
+font-size: 14px;
+font-weight: 400;
+ padding: 8px 24px ;
+background-color: rgb(72, 98, 107);
+cursor: pointer;
+transition: all 0.3 ease;
+}
+.buttons .button:hover {
+    background-color: rgb(88, 121, 133);
+}
+
+</style>
+
+    </head>
+    <body class="body">
+        <div class="profile-card" >
+             <div class="image">
+             <img src="IMG_20240626_104145_254.jpg" 
+             class="profile-img">
+        </div>
+       <div class="text">
+        <span class="name"> Diakon Abel</span>
+        <span class="job"> Tutor & Mentor</span>
+       </div>
+
+       <div class="media-buttons">
+        <img src="bxl-facebook.svg" class="link">
+        <img src="bxl-telegram (1).svg" class="link">
+        <img src="bxl-tiktok.svg" class="link">
+        <img src="bxl-instagram.svg" class="link">
+       </div>
+       <div class="buttons">
+        <button class="button">Message </button>
+        
+        
+
+       </div>
+ </div>
+ </body>
+ </html>
